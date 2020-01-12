@@ -5,10 +5,11 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Tabbed from '../components/Tabbed';
-import WithoutData from './WithoutData';
-import WithData from './withData';
+import WithoutData from '../pages/WithoutData';
+import WithData from '../pages/withData';
+import Footer from '../components/Footer';
 
-function Home() {
+function Resplash() {
 	return (
 		<>
 			<Header />
@@ -24,8 +25,9 @@ function Home() {
 					</Route>
 				</Switch>
 			</Router>
+			<Footer />
 		</>
 	);
 }
 
-export default Home;
+export default Resplash;

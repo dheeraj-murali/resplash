@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
 	title: {
 		flexGrow: 1,
 	},
+	button: {
+		textDecoration: 'none',
+	},
 }));
 
 const Header = () => {
@@ -35,9 +38,16 @@ const Header = () => {
 					<Typography variant='h6' className={classes.title}>
 						Re-splash
 					</Typography>
-					<Button color='secondary' startIcon={<GitHubIcon />}>
-						View on GitHub
-					</Button>
+					<a
+						href='https://github.com/dheeraj-murali/resplash'
+						target='_blank'
+						rel='noopener noreferrer'
+						className={classes.button}
+					>
+						<Button color='secondary' startIcon={<GitHubIcon />}>
+							View on GitHub
+						</Button>
+					</a>
 				</Toolbar>
 			</AppBar>
 		</div>

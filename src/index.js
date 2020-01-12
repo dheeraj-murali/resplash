@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-import Home from './pages/Home';
+import Resplash from './template/Resplash';
 import * as serviceWorker from './serviceWorker';
 // redux
 import { Provider } from 'react-redux';
@@ -9,7 +9,7 @@ import store from './redux/Store';
 
 ReactDOM.render(
 	<Provider store={store}>
-		<Home />
+		<Resplash />
 	</Provider>,
 	document.getElementById('root')
 );

@@ -11,9 +11,8 @@ const useStyles = makeStyles((theme) => ({
 	heroContent: {
 		backgroundColor: 'black',
 		backgroundImage:
-			'linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),url(https://source.unsplash.com/random)',
+			'linear-gradient(rgba(195, 55, 100, 0.8), rgba(29, 38, 113, 0.8)),url(https://source.unsplash.com/600x400/?nature)',
 		backgroundSize: 'cover',
-		height: '60vh',
 		padding: theme.spacing(8, 0, 6),
 		color: '#ffffff',
 	},

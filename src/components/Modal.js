@@ -14,11 +14,12 @@ import Typography from '@material-ui/core/Typography';
 //CSS-in-JS
 const useStyles = makeStyles({
 	card: {
-		width: 600,
+		maxWidth: 400,
 		padding: 2,
 	},
 	media: {
-		height: 350,
+		minHeight: '200px',
+		maxHeight: '600px',
 	},
 });
 
@@ -102,7 +103,7 @@ const Modal = ({ model, setModel, updatePhoto }) => {
 								onClick={() => handleUpdate(model.photo.id)}
 								color='primary'
 							>
-								Update
+								Save
 							</Button>
 						</CardActions>
 					</>
