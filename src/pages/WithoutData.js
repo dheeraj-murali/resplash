@@ -46,9 +46,6 @@ const WithoutData = (props) => {
 							src={photo.src}
 							alt={photo.src}
 							className={classes.responsive}
-							// onLoad={() =>
-							// 	setModel({ ...model, isOpen: true })
-							// }
 							onLoad={() => setLoading((loading) => loading - 1)}
 						/>
 					</div>
@@ -60,7 +57,7 @@ const WithoutData = (props) => {
 				updatePhoto={props.updatePhoto}
 			/>
 			<Dialog
-				open={calculateValue(loading) > 50}
+				open={calculateValue(loading) > 75}
 				aria-labelledby='alert-dialog-title'
 				aria-describedby='alert-dialog-description'
 			>
